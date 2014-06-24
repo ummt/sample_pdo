@@ -1,0 +1,15 @@
+/* ユーザ作成 */
+GRANT ALL PRIVILEGES ON pdo_test.* to dbuser@'localhost' IDENTIFIED BY 'dbpass';
+
+/* sampleデータベースを作成する */
+CREATE DATABASE pdo_test;
+
+/* sampleデータベースを使用する */
+USE pdo_test;
+
+/* userテーブルを作成する */
+CREATE TABLE table_test
+(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name varchar(30) NOT NULL
+);
